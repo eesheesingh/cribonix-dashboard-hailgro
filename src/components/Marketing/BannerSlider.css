@@ -1,0 +1,29 @@
+.banner-slider {
+    overflow-x: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    cursor: grab;
+  }
+
+  .slider__div{
+    overflow-x: auto;
+  }
+  
+  .banner-slider__container {
+    display: flex;
+    gap: 20px; /* Adjust the gap between items */
+  }
+
+  .banner-slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .banner-slider__item {
+    flex: 0 0 auto;
+    width: calc(100% / 3 - 20px); /* Adjust width to show 3 items at once */
+    /* Add styling for your items */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
